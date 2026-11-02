@@ -1,16 +1,24 @@
-# React + Vite
+# GoIT React Homework #1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is the first homework assignment within the GoIT React Developer program. It focuses on foundational React concepts including component-based architecture, props passing, conditional styling, list rendering, CSS modules, and external JSON data management using Vite.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+- [View Live Application on Vercel](https://goit-react-hw-01-lovat-ten.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Components Included
+1. **Profile (`<Profile>`):** Displays user social media profile details (avatar, name, tag, location) and follower statistics (followers, views, likes) utilizing data imported from `userData.json`.
+2. **Friend List (`<FriendList>` & `<FriendListItem>`):** Renders a dynamic list of friends with their avatars, names, and online/offline status indicators (`isOnlie` conditional styling) using data from `friends.json`.
+3. **Transaction History (`<TransactionHistory>`):** Displays a structured financial ledger table outlining transaction types, amounts, and currencies using data imported from `transactions.json`.
 
-## React Compiler
+## 📂 Project Structure
+- `src/components/Profile/` — Profile component & CSS module (`Profile.jsx`, `Profile.module.css`)
+- `src/components/FriendList/` — FriendList & FriendListItem components & CSS modules
+- `src/components/TransactionHistory/` — TransactionHistory component & CSS module
+- `src/` — JSON data files (`userData.json`, `friends.json`, `transactions.json`) and root `App.jsx`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies & Tools Used
+- **React (v18+):** Functional components and props.
+- **Bundler:** Vite.
+- **Styling:** CSS Modules for scoped component styling.
+- **Data Management:** JSON files for clean separation of concerns.
+- **Version Control & Deployment:** Git, GitHub, and Vercel.
